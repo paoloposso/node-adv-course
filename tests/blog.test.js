@@ -20,7 +20,6 @@ describe('While logged in', async () => {
     it('should see blog create form', async () => {
     
         const label = await page.getContentsOf('form label');
-    
         expect(label).toEqual('Blog Title');
     });
 
